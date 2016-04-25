@@ -11,10 +11,24 @@
 
 <body bgcolor="lightyellow">
   <form>
-    <b><font color="blue">Class Information</font></b> <label>Full Name :</label>
-    <input type="text" name="fullname" value=" " /> <label>E-Mail :</label> <input type=
-    "text" name="email" value=" " /> <label>Phone No. :</label> <input type="text" name=
-    "phone" value=" " />
+    <b><font color="blue">Class Information</font></b><br> 
+	<label>Full Name :</label> <input type="text" name="fullname" value=" " /><br>
+	<label>E-Mail :</label> <input type="text" name="email" value=" " /><br>
+	<label>Phone No. :</label> <input type="text" name="phone" value=" " /><br>
+	
+	<B><font color="blue">Enrollment</font></B>
+	<BR>In what session are you enrolled?<BR>
+		<INPUT type="radio" name="session" value="day">Day session
+		<INPUT type="radio" name="session" value="evening">Evening session
+		<INPUT type="radio" name="session" value="weekend">Weekend session
+		
+	<P>Choose!
+	<SELECT NAME="year" SIZE=1>
+		<OPTION SELECTED> Two
+		<OPTION> One
+		<OPTION> Two 
+		<OPTION> Three
+	</SELECT>	
   </form>
 </body>
 </html>
