@@ -11,19 +11,29 @@
 			// Syntax: ctx.arc(x,y,r,startAngle,endAngle,counterclockwise(boolean) );
 			ctx.beginPath();  //start drawing
 			ctx.arc(95,50,40,0,2*Math.PI);  //draw arc whose x is 95, y is 50, radius 40, start at 0 angle, end at 2*Math.PI angle
+			ctx.fillStyle= "#FFD719";
+			ctx.fill();
 			ctx.stroke();  //end drawing
 			
 			ctx.beginPath();  //start drawing
-			ctx.arc(80,40,10,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
+			ctx.arc(80,40,5,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
+			ctx.fillStyle= "black";
+			ctx.fill();
 			ctx.stroke();  //end drawing
 			
 			ctx.beginPath();  //start drawing
-			ctx.arc(110,40,10,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
+			ctx.arc(110,40,5,0,2*Math.PI); //draw smaller cirle (because circle above is bigger)
+			ctx.fillStyle= "black";
+			ctx.fill();
 			ctx.stroke();  //end drawing
 			
 			ctx.beginPath();  //start drawing
-			ctx.arc(95,60,12,0,1*Math.PI); //draw smaller cirle (because circle above is bigger)
+			ctx.arc(96,60,13,0,1*Math.PI); //mouth
+			ctx.fillStyle = "red";
+			ctx.fill();
 			ctx.stroke();  //end drawing
+			
+			
 			
 			ctx.closePath();
 		
