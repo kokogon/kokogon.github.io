@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <title>Derp</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/2-col-portfolio.css" rel="stylesheet">
+
+   
+</head>
+  <body width = "50px">
+      <script>
+          function toNum(n){
+              return parseInt(n);
+          }
+          function add(n1, n2){
+              sum=toNum(n1) + toNum(n2);
+            output(sum);
+          }
+		  
+          function Subtract(n1, n2){
+              sum=toNum(n1) - toNum(n2);
+            output(sum);
+          }
+		  
+          function Multiply(n1, n2){
+              sum=toNum(n1) * toNum(n2);
+            output(sum);
+          }
+		  
+          function Divide(n1, n2){
+              sum=toNum(n1) / toNum(n2);
+            output(sum);
+          }
+          function output(res){
+              alert(res);
+          }
+      </script>
+		
+	
+	<div class="container">
+		<div class = "row">
+			<div class="col-md-6">
+
+				<form name="calc">
+					<h1>Calculator</h1>
+					Num1: <input type="text" id="num1"><br>
+					Num2: <input type="text" id="num2"><br>
+				</form> 
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<button class="btn" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button></a>
+			</div>
+			<div class="col-md-6">
+			   <button class="btn" onclick="Subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button></a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<button class="btn" onclick="Multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button></a>
+			</div>
+			<div class="col-md-6">
+				<button class="btn" onclick="Divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button></a>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+<!-- jQuery -->
+<script src="../../js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../../js/bootstrap.min.js"></script>
+	
+  </body>
+</html>
