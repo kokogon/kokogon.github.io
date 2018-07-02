@@ -1,0 +1,47 @@
+<html>
+	<style>
+		.search_con {
+			background-color: rgba(0, 54, 56,0.75);
+			padding:10px;
+			border-radius: 8px;
+			margin-top: 10px !important;
+			margin-bottom: 10px !important;
+			color: #fff;
+			font-family: Kiona;
+			width: 210px;
+		}
+
+		.searchbox{
+			font-size: 16px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			width: 125px;
+			background-color: #005359 !important; 
+		}
+		.searchButton {
+
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			font-size: 16px;
+			background-color: #00676b;
+			color: #fff !important;
+			width: 60px;
+		}
+
+		::placeholder{
+			color: #fff !important;
+		}
+		
+
+
+	</style>
+	<center>
+	<div class="search_con">
+		Search Username:	
+		<form action="search.php" method=post>
+			<input type="text" name="searchbox" placeholder="Search..." class="searchbox">
+			<input type="submit" name=submit class="searchButton" value=" &#128440; ">
+		</form>
+	</div>
+	</center>
+</html>
